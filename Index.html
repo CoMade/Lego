@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="jquery-1.10.2.js"></script>
+		<script src="jquery-ui-1.10.0.js"></script>
+		<script src="jquery.ui.touch-punch.js"></script>
+		<script src="lego-sorting.js"></script>
+	</head>
+<body>
+	<div id="lego-bricks-initial-container">
+	</div>
+
+	<div class="sorting-pot red-pot"></div>
+	<div class="sorting-pot yellow-pot"></div>
+	<div class="sorting-pot green-pot"></div>
+	<div class="sorting-pot blue-pot"></div>
+
+	<a id="link-to-comade-site" href=http://www.comade.co.uk style="position:absolute"></a>
+
+	<script type="text/javascript">
+		
+		
+		var doc = $(document);
+		
+		yposition = (doc.height() / 2) - 70;
+		xposition = (doc.width() / 2) - 70;
+		
+				
+		var comadeLink = $('#link-to-comade-site');
+		comadeLink.css('top', yposition + 'px');
+		comadeLink.css('left', xposition + 'px');
+		comadeLink.css('z-index', 0);
+		
+		lego.init();
+		
+	</script>
+</body>
+</html>
